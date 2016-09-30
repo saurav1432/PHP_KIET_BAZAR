@@ -1,0 +1,112 @@
+
+.adds_top
+{
+    font-size: 10px;
+    font-style:  italic;
+    font-weight:  100;
+    font-color: black;
+}
+
+#adds_first
+{
+    
+    border-color: lightblue;
+    border-style: solid;
+    border-width: thin;
+}
+
+.adds_firstTD
+{
+    height: 100px;
+    width: 200px;
+}
+
+/*.adds_lastTD
+{
+    padding-bottom: 70px;
+    padding-left: 70px;
+    height: 100px;
+    width: 150px;
+    color: black;
+}*/
+
+.adds_middleTD
+{
+    height: 100px;
+    width: 600px;
+}
+
+/*.adds_trone
+{
+    padding-top: 5px;
+    height: 45px;
+    width: 600px;
+}*/
+/*.adds_trtwo
+{
+    height: 35px;
+    width: 600px;
+    color: black;
+}*/
+/*.adds_trthree
+{
+    height: 20px;
+    width: 600px;
+    color: black;
+}*/
+
+.adds_none
+{
+    text-decoration: none;
+}
+.adds_firsthref
+{
+    text-decoration: none;
+    color: black;
+}
+
+td.adds_lastTD {
+    padding-bottom: 80px;
+    height: 100px;
+    width: 200px;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    font-variant: small-caps;
+    font-family: Lato;
+}
+
+td.adds_trone {
+    height: 45px;
+    width: 600px;
+    font-family: Palatino;
+    font-weight: bold;
+    font-size: 22px;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
+    text-decoration: none;
+}
+
+td.adds_trtwo {
+    height: 35px;
+    width: 600px;
+    color: black;
+    font-family: Lato;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: capitalize;
+}
+
+td.adds_trthree {
+    height: 20px;
+    width: 600px;
+    color: black;
+    font-family: Lato;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: capitalize;
+}

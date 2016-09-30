@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Kiet Shop</title>
+       <script src="angular.min.js"></script>
+<!--
+       <script src="module.js"></script>
+        <script src="validate.js"></script>
+-->
+    </head>
+<!--    <body ng-app="myApplication" ng-controller="myController">-->
+   <body ng-app="postaddModule" ng-controller="postaddController">
+    <center>
+                  <div class="main_postad">
+<!--                  <form action="https://www.google.co.in" method="POST" autocomplete="on" name="postadd" novalidate>-->
+                 <form ng-submit="checkValidation(postadd)" autocomplete="on" name="postadd" novalidate="novalidate" >
+                  <h1><u>POST YOUR ADD</u></h1>
+                  <br><br>
+                  <div id="start">
+              
+                  <table border="0">
+                  <tr>
+                  <td>TAG-LINE :</td>
+                  <td><input type="text" id="tag" name="tag" ng-model="tag" ng-minlength="10" ng-maxlength="100" size="50" required>
+                  <span style="color:red" ng-show="postadd.tag.$dirty && postadd.tag.$invalid">
+                  <span ng-show="postadd.tag.$error.required">Tag Line is required.</span>
+                  <span ng-show="postadd.tag.$error.minlength">Tag Line Is Too Sort.</span>
+                  <span ng-show="postadd.tag.$error.maxlength">Tag Line Is Too Long.</span>
+                  </span></td>
+                  </tr>
+                  <tr><td>&nbsp;</td></tr>       
+                 
+                  <tr>
+                  <td>NAME :</td><td><input type="text" name="name" id="name" ng-model="name" pattern="[a-z]{1,50}" placeholder="Type Name Here" required>
+                  <span style="color:red" ng-show="postadd.name.$dirty && postadd.name.$invalid">
+                  <span ng-show="postadd.name.$error.required">Name is required.</span>
+                  <span ng-show="postadd.name.$error.pattern">Please enter a valid name.</span>
+                   </span>
+                  </td>
+                  </tr>
+                  <tr><td>&nbsp;</td></tr>
+                  
+                  <tr><td>For Security Purpose :</td><td><input type="radio" value="Show Name" name="fsp">Show Name  <input type="radio" value="Not Show Name" name="fsp">Not Show Number</td></tr>
+                  <tr><td>&nbsp;</td></tr>
+                
+                 <tr>
+                 <td>MOBILE NO. :</td><td><input id="color" type="text" value="+91" readonly size="1"><input type="text" id="num" placeholder="Type Number" name="mobNo" ng-model="mobNo" pattern="[1-9]{1}[0-9]{9}" required >
+                 <span style="color:red" ng-show="postadd.mobNo.$dirty && postadd.mobNo.$invalid">
+                 <span ng-show="postadd.mobNo.$error.required">Number is required.</span>
+                 <span ng-show="postadd.mobNo.$error.pattern">Number required 10 digit.</span>
+                 </span>
+                 </td></tr>
+                 <tr><td>&nbsp;</td></tr>
+                 
+                 <tr><td> KIET E-MAIL ID :</td><td><input type="email" id="mail" placeholder="Type Id here" name="email" ng-model="email"     pattern="[a-z]{1,50}.[1-9]{1}[0-9]{6}@kiet.edu"required>
+                 <span style="color:red" ng-show="postadd.email.$dirty && postadd.email.$invalid">
+                 <span ng-show="postadd.email.$error.required">Email is required.</span>
+                 <span ng-show="postadd.email.$error.pattern">Invalid Email id.</span>
+                </span>
+                 </td></tr> 
+                 <tr><td>&nbsp;</td></tr>                                    
+                  
+                  <tr><td>HOSTEL :</td><td><select name="hostel" id="hostel">
+                    <option></option>
+                    <option>GARGI</option>
+                    <option>SARASWATI</option>
+                    <option>TAGORE</option>
+                    <option>VIVEKANAND</option>
+                    <option>ARYABHATT</option>
+                    <option>ATITHI</option>
+                    <option>CHANDRAGUPTA</option>
+                    <option>OTHERS</option>
+                  </select></td></tr>
+                   <tr><td>&nbsp;</td></tr>
+                   <tr><td>ROOM NO. : </td><td><input type="text" id="room" placeholder="Type Room.NO" name="room" required></td>
+                   </tr>
+                   <tr><td>&nbsp;</td></tr>
+                 
+                <tr>   
+                <td>CATEGORY :</td><td> <select name="category" id="catagory" onchange='makeInput(this.value)';>
+                    <option></option>
+                    <option>COOLER</option>
+                    <option>BOOKS</option>
+                    <option>MATTRESS</option>
+                    <option>MOBILE & ACCESSORIES</option>
+                    <option>ELECTRONIC ACCESSORIES</option>
+                    <option>OTHERS</option>
+                </select>&nbsp;&nbsp;
+                <a href="#"><img src="img/cooler.jpg" width="30" height="30"></a>&nbsp;
+                <a href="#"><img src="img/matteress.jpg" width="30" height="31"></a>&nbsp;
+                <a href="#"><img src="img/mobile.jpg" width="30" height="30"></a>&nbsp;
+                <a href="#"><img src="img/trimmer.jpg" width="30" height="34"></a></td></tr>
+                <tr><td></td><td><input type='text' id="makeDyn" placeholder="type other catagory here" style="display:none;"></td></tr>
+                <tr><td>&nbsp;</td></tr>
+                
+               <tr> <td> PRICE :</td><td><input type="text" id="price" name="price" ng-model="price" pattern="[1-9]{1}[0-9]{0,4}" required>
+               <span style="color:red" ng-show="postadd.price.$dirty && postadd.price.$invalid">
+                 <span ng-show="postadd.price.$error.required">Price is required.</span>
+                 <span ng-show="postadd.price.$error.pattern">Invalid Price.</span>
+               </span>
+               </td></tr>
+               <tr><td>&nbsp;</td></tr>
+               
+               <tr><td> UPLOAD 3 PICS:</td> 
+               <td><input type="file" name="photo" class="p" value="" required/></td></tr>
+               <tr><td></td><td><input type="file" name="photo" class="p" value=""/></td></tr>
+               <tr><td></td><td><input type="file" name="photo" class="p" value=""/></td></tr>
+                <tr><td>&nbsp;</td></tr>
+               
+               <tr><td>Add Description :</td><td> <textarea rows="4" id="text1" cols="50" name="description" ng-model="description" placeholder="Include The Brand Model Age any Any Other details if required..." ng-minlength="10" ng-maxlength="2000" required>
+                  </textarea>
+                  <span style="color:red" ng-show="postadd.description.$dirty && postadd.description.$invalid">
+                  <span ng-show="postadd.description.$error.required">Description is required.</span>
+                  <span ng-show="postadd.description.$error.minlength">Description Is Too Sort.</span>
+                  <span ng-show="postadd.description.$error.maxlength">Description Is Too Long.</span>
+                  </span>
+               </td></tr>
+               <tr><td>&nbsp;</td></tr>
+               </table>                   
+               <br><center>By clicking 'Submit' you agree to our <a href="#" onmouseover="style.color='red'" onmouseout="style.color='blue'">Terms & Conditions</a></center>
+               <br><br><center><a href="#"><input type="submit" id="bt" class="styled-button-8" value="SUBMIT" 
+               onmouseover="this.style.background='blue'" onmouseout="this.style.background='#25A6E1'"/></a></center>  
+               <br><br>
+               </div>
+               </form> </div> </center>
+               <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<!--              <?php include 'footer.php';?>-->
+       <script>
+           var app = angular.module("postaddModule",[]);
+           app.controller("postaddController",function($scope)
+                         {
+                    $scope.checkValidation = function(form)
+                    {
+                        if(form.$valid)
+//                    {
+                        console.log("your form is successfully submit...");
+//                    }
+               else
+                  alert("please fill the required fields");
+                   }
+           });
+        </script>
+    </body>
+</html>

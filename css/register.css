@@ -1,0 +1,125 @@
+/*body
+{
+    font-family: cursive;
+}*/
+.main_postad{
+    background-color: white;
+    
+    width: 1100px;
+}
+
+#start
+{
+    height: 1000px;
+    border-bottom-color: white;
+    border-left-color: lightblue;
+    border-right-color: lightblue;
+    border-top-color: white;
+    border-width: thin;
+    border-style: solid;
+}
+ #tag,#name,#num,#mail,#hostel,#room,#catagory,#price,.p,#text
+ {
+/*    border-bottom-color: white;*/
+    border-width: thin;
+    border-color: lightgrey;
+    border-style: solid;
+ }
+
+#color
+{
+    background-color: lightgrey;
+}
+
+div:focus
+{
+    background-color: blue;
+}
+
+#tag,#name,#num,#mail,#hostel,#room,#catagory,#price,.p,#text
+{
+border-radius: 5px;
+height: 30px;
+width: 300px;
+}
+
+#color
+{
+    height: 30px;
+    width: 40px;
+    border-radius: 5px;
+    background-color: blue;
+}
+
+#text1
+{
+    border-width: thin;
+    border-radius: 5px;
+    width: 300px;
+}
+
+/*
+#price:hover{
+    width: 350px;
+    background-color: blue;
+}
+
+#text1:hover{
+    width: 350px;
+    background-color: blue;
+}
+
+#tag:hover               
+{
+    width: 350px;
+    background-color: blue;
+}
+
+#hostel:hover{
+    width: 350px;
+    background-color: blue;
+}
+
+#catagory:hover{
+    width: 350px;
+    background-color: blue;
+}
+
+#num:hover
+{
+    width: 350px;
+    background-color: blue;
+}
+
+#mail:hover
+{
+    width: 350px;
+    background-color: blue;
+}
+
+#room:hover{
+    width: 350px;
+    background-color: blue;
+}
+
+#name:hover{
+    width: 350px;
+    background-color: blue;
+}
+*/
+
+#uploadImage{
+    width: 300px;
+    height: 70px;
+}
+
+.upimg
+{
+    width: 100px;
+    height: 70px;
+    float: left;
+}
+
+.t{
+    width: 500px;
+}

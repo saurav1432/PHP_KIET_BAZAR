@@ -1,0 +1,168 @@
+ 
+.main_postad{
+    height: 700px;
+    background-color: white;
+}
+ #tag,#name,#mobile,#catagory
+ {
+    border-bottom-color: white;
+    border-width: 1px;
+    border-left-color: black;
+    border-right-color: black;
+    border-top-color: black;
+    border-style: solid;
+ }
+
+#color
+{
+    background-color: lightgrey;
+}
+
+div:focus
+{
+    background-color: lightyellow;
+}
+
+#tag,#name,#color,#num,#mail,#hostel,#room,#catagory,#makeDyn,#price,.p,#text
+{
+border-radius: 5px;
+}
+
+.profile
+{
+    float: right;
+    padding-right: 10px;
+}
+
+#profile
+{
+    padding-bottom: 20px;
+    text-decoration:none;
+}
+
+.styled-button-12 {
+	background: #5B74A8;
+	background: -moz-linear-gradient(top,#5B74A8 0%,#5B74A8 100%);
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#5B74A8), color-stop(100%,#5B74A8));
+	background: -webkit-linear-gradient(top,#5B74A8 0%,#5B74A8 100%);
+	background: -o-linear-gradient(top,#5B74A8 0%,#5B74A8 100%);
+	background: -ms-linear-gradient(top,#5B74A8 0%,#5B74A8 100%);
+	background: linear-gradient(top,#5B74A8 0%,#5B74A8 100%);
+	padding:2px 6px;
+	color:#fff;
+	font-family:'Helvetica',sans-serif;
+	font-size:11px;
+	border-radius:0;
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	border:1px solid ;
+}
+
+.none
+{
+    text-decoration: none;
+}
+
+#login
+{
+    height: 400px;
+    width: 400px;
+    border-color: lightblue;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 6px;
+} 
+
+#fb
+{
+    height: 125px;
+    width: 400px;
+    border-color: lightblue;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 6px;
+}
+
+#register
+{
+    height: 400px;
+    width: 900px;
+/*    border-color: lightblue;*/
+/*    border-width: 1px;*/
+/*    border-style: solid;*/
+   background-color: white;
+    margin: 0 auto;
+/*    float: left;*/
+}
+
+#asidelreg
+{
+    height: 420px;
+    width: 500px;
+/*    float: left;*/
+    border-right-color: white;
+    border-left-color: lightblue;
+    border-top-color: lightblue;
+    border-bottom-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+#asiderreg
+{
+    padding-top: 20px;
+    height: 400px;
+    width: 400px;
+/*    float: left;*/
+    border-top-color: lightblue;
+    border-bottom-color: white;
+    border-right-color: lightblue;
+    border-left-color: lightgray;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+#logid
+{
+    width: 150px;
+    height: 30px;
+    background-color: lightgray;
+    padding-top: 15px;
+    border-radius: 4px;
+}
+
+#POTP
+{
+    width: auto;
+    height: 50px;
+    background-color: lightyellow;
+    padding-top: 20px;
+}
+
+#concfb
+{
+    width: 150px;
+    height: 50px;
+    background-color: lightgray;
+    border-radius: 4px;
+}
+
+#start
+{
+    height: 600px;
+    border-bottom-color: white;
+    border-left-color: lightblue;
+    border-right-color: lightblue;
+    border-top-color: white;
+    border-width: 1px;
+    border-style: solid;
+}
+
+#demo
+{
+    margin: 0 auto;
+    width: 50%;
+    float: left;
+}
